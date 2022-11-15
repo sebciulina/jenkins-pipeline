@@ -23,3 +23,17 @@ app.get('/hobbies/:id', async (req, res) => {
     }
     res.send(hobby);
 })
+
+app.get('/count', async (req, res) => {
+    res.send(hobbies.getHobbies().length);
+})
+
+app.get('/odd', async (req, res) => {
+    let even = [];
+
+    for (let i = 0; i < hobbies.getHobbies().length; i++) {
+        if(i%2!=0){even.push(hobbies.getHobby(i));}
+    }
+
+    res.send(even);
+})
