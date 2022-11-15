@@ -36,4 +36,4 @@ app.get('/odd', async (req, res) => {
     }
 
     res.send(even);
-})
+}) 
