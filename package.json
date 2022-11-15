@@ -1,3 +1,4 @@
+
 {
   "name": "jenkins-pipeline",
   "version": "1.0.0",
@@ -7,9 +8,10 @@
     "test": "jasmine"
   },
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.17.1"
   },
   "devDependencies": {
-    "jasmine": "^3.99.0"
+    "jasmine": "^3.4.0",
+    "request": "^2.88.2"
   }
 }
